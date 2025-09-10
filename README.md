@@ -533,7 +533,7 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
-
+![Alt text](img/63.png)
 # check if with file location
 cat>ifnested.sh 
 ```bash
@@ -579,7 +579,7 @@ fi
 
 ./ifnested.sh 
 ## OUTPUT
-
+![Alt text](img/64.png)
 
 
 # using numeric test comparisons
@@ -623,7 +623,7 @@ $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
 ##OUTPUT
-
+![Alt text](img/65.png)
 # check if a file
 cat > ifnested.sh 
 ```bash
@@ -672,9 +672,9 @@ $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
 ##OUTPUT
-
+![Alt text](img/66.png)
 # looking for a possible value using elif
-cat elifcheck.sh 
+cat > elifcheck.sh 
 ```bash
 \#!/bin/bash
 if [ $USER = Ram ]
@@ -700,7 +700,7 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
-
+![Alt text](img/67.png)
 
 # testing compound comparisons
 cat> ifcompound.sh 
@@ -716,7 +716,7 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
-
+![Alt text](img/68.png)
 # using the case command
 cat >casecheck.sh 
 ```bash
@@ -735,8 +735,9 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
- 
-cat > whiletest
+##OUTPUT
+ ![Alt text](img/69.png)
+cat > whiletest.sh
 ```bash
 #!/bin/bash
 #while command test
@@ -750,9 +751,10 @@ done
 $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
+##OUTPUT
+ ![Alt text](img/70.png)
  
- 
-cat untiltest.sh 
+cat > untiltest.sh 
 ```bash
 \#using the until command
 var1=100
@@ -763,10 +765,12 @@ var1=$[ $var1 - 25 ]
 done
 ``` 
 $ chmod 755 untiltest.sh
+##OUTPUT
+![Alt text](img/71.png)
  
  
  
-cat forin1.sh 
+cat> forin1.sh 
 ```bash
 \#!/bin/bash
 \#basic for command
@@ -781,7 +785,7 @@ $ chmod 755 forin1.sh
  
 cat forin2.sh 
 ```bash
-\#!/bin/bash
+#!/bin/bash
 \# another example of how not to use the for command
 for test in I don't know if this'll work
 do
@@ -791,10 +795,10 @@ done
  
 $ chmod 755 forin2.sh
  
-cat forin2.sh 
+cat> forin2.sh 
 ```bash
-\#!/bin/bash
-\# another example of how not to use the for command
+#!/bin/bash
+\# an#!other example of how not to use the for command
 for test in I don't know if this'll work
 do
 echo “word:$test”
@@ -803,8 +807,10 @@ done
 $ chmod 755 forin2.sh
  
 $ ./forin2.sh 
+##OUTPUT
+![Alt text](img/72.png)
  
-cat forin3.sh 
+cat> forin3.sh 
 ```bash
 \#!/bin/bash
 \# another example of how not to use the for command
@@ -814,8 +820,10 @@ echo "word:$test"
 done
 ```
 $ ./forin3.sh 
+##OUTPUT
+![Alt text](img/73.png)
  
-cat forin1.sh 
+cat > forin1.sh 
 ```bash
 #!/bin/bash
 # basic for command
@@ -827,6 +835,7 @@ done
 $ chmod 755 forin1.sh
 
 ## OUTPUT
+![Alt text](img/74.png)
 cat forinfile.sh 
 ```bash
 #!/bin/bash
@@ -847,8 +856,11 @@ Adilabad
 Bhadrachalam
 Khammam
 
+cat cities
+
 ## OUTPUT
 
+![Alt text](img/75.png)
 
 cat forctype.sh 
 ```bash
@@ -862,7 +874,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype.sh 
 ## OUTPUT
-
+![Alt text](img/76.png)
 cat forctype1.sh 
 ```bash
 #!/bin/bash
@@ -875,7 +887,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
 ## OUTPUT
-
+![Alt text](img/77.png)
 cat fornested1.sh 
 ```bash
 #!/bin/bash
@@ -893,7 +905,7 @@ $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
  ## OUTPUT
-
+![Alt text](img/78.png)
  
 cat forbreak.sh 
 ```bash
@@ -909,7 +921,6 @@ echo "Iteration number: $var1"
 done
 echo "The for loop is completed“
 ```
-## OUTPUT
 
 $ chmod 755 forbreak.sh
  
@@ -935,7 +946,7 @@ $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
 ## OUTPUT
- 
+ ![Alt text](img/79.png)
 cat exread.sh 
 ```bash
 #!/bin/bash
@@ -949,7 +960,7 @@ $ chmod 755 exread.sh
  
 $ ./exread.sh 
 ## OUTPUT
-
+![Alt text](img/80.png)
 
  cat exread1.sh
 ```bash
@@ -960,7 +971,6 @@ echo "Hello $name, welcome to my program. “
 ``` 
 $ chmod 755 exread1.sh 
 
-## OUTPUT
 
 
 
@@ -982,6 +992,7 @@ echo "Usage: badtest1 a b"
 fi
 ```
 ## OUTPUT
+![Alt text](img/81.png)
  ./funcex.sh 
 
  
@@ -999,6 +1010,7 @@ done
 $ chmod 777 argshift.sh
 
 ## OUTPUT
+![Alt text](img/82.png)
 $ ./argshift.sh 1 2 3
  
  cat argshift1.sh
@@ -1016,6 +1028,7 @@ done
 ```
 $ chmod 777 argshift.sh
 ## OUTPUT
+![Alt text](img/83.png)
 $ ./argshift.sh 1 2 3
  
 cat argshift.sh
@@ -1029,6 +1042,7 @@ done
 set +x
 ```
 ## OUTPUT
+![Alt text](img/84.png)
  ./argshift.sh 1 2 3
  
  
@@ -1061,7 +1075,7 @@ ubcdfghj
 ```
 awk -f nc.awk data.dat
 ## OUTPUT 
- 
+ ![Alt text](img/85.png)
 cat > palindrome.sh
 ```bash
 #num=545
@@ -1088,7 +1102,7 @@ else
 fi
 ```
 ## OUTPUT 
-
+![Alt text](img/86.png)
 
 # RESULT:
 The Commands are executed successfully.
